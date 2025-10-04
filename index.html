@@ -10,9 +10,12 @@
   </head>
   <body>
     <header>
-      <div class="brand">
-        <img src="./img/Logo hell transparent.png" alt="Pfadfinder Logo" class="brand-logo" loading="eager" />
-      </div>
+  <div class="brand">
+    <a href="index.html" aria-label="Zur Startseite">
+      <img src="./img/Logo hell transparent.png" alt="Pfadfinder Logo" class="brand-logo" loading="eager">
+    </a>
+  </div>
+
 
       <!-- Hamburger-Button -->
       <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü öffnen">
@@ -24,10 +27,10 @@
       <!-- Navigation -->
       <nav id="primary-nav" class="nav-links" data-collapsed>
         <a href="./sites/gs.html">Gruppenstunden</a>
-        <a href="#Sommerlager">Sommerlager</a>
-        <a href="#anmeldungen">Anmeldungen</a>
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="./sites/sola.html">Sommerlager</a>
+        <a href="./sites/aktionen.html">Weitere Aktionen</a>        
+        <a href="./sites/anmeldungen.html">Anmeldungen</a>
+        <a href="./sites/kontakt.html">Kontakt</a>
         <a
           href="https://www.instagram.com/dpsg_stamm_17und4_papenburg/"
           target="_blank"
@@ -74,9 +77,19 @@
       </section>
     </main>
 
-    <footer id="kontakt">
-      <p>📍 Papenburg | ✉️ E-Mail: pfadfinder17und4@gmail.com</p>
-      <p>© 2025 DPSG 17&4 Papenburg</p>
+    <footer class="site-footer">
+    <div class="footer-left">
+        <p>©2025 - DPSG Stamm 17&4 Papenburg</p>
+    </div>
+
+    <div class="footer-center">
+        <img src="../img/Logo grau transparent klein.png" alt="Pfadfinder-Lilie" class="footer-logo">
+    </div>
+
+    <div class="footer-right">
+        <a href="../sites/datenschutz.html">Datenschutzerklärung</a>
+        <a href="../sites/impressum.html">Impressum</a>
+    </div>
     </footer>
 
     <script src="./scripts/nav.js"></script>

@@ -5,7 +5,7 @@
     color: #fff;
     padding: clamp(5rem, 12vw, 9rem) 1rem;
     /* flexibel für alle Größen */
-    background: url('/img/bild.jpg') no-repeat center / cover;
+    background: url('./img/bild.jpg') no-repeat center / cover;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, .7);
     overflow: hidden;
 }

@@ -3,38 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DPSG 17&4 Papenburg</title>
+    <title>DPSG 17&4 Papenburg – Gruppenstunden</title>
     <link rel="icon" type="image/x-icon" href="Logo blau transparent klein.png" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="../stylesheets/gs.css" />
   </head>
   <body>
     <header>
       <div class="brand">
-    <a href="../index.html" aria-label="Zur Startseite">
-      <img src="../img/Logo hell transparent.png" alt="Pfadfinder Logo" class="brand-logo" loading="eager">
-    </a>
-  </div>
+        <a href="../index.html" aria-label="Zur Startseite">
+          <img src="../img/Logo hell transparent.png" alt="Pfadfinder Logo" class="brand-logo" loading="eager">
+        </a>
+      </div>
 
-      <!-- Hamburger-Button -->
       <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü öffnen">
         <span class="bar" aria-hidden="true"></span>
         <span class="bar" aria-hidden="true"></span>
         <span class="bar" aria-hidden="true"></span>
       </button>
 
-      <!-- Navigation -->
       <nav id="primary-nav" class="nav-links" data-collapsed>
-        <a href="../sites/gs.html">Gruppenstunden</a>
+        <a href="../sites/gs.html" aria-current="page">Gruppenstunden</a>
         <a href="../sites/sola.html">Sommerlager</a>
-        <a href="../sites/aktionen.html">Weitere Aktionen</a>        
+        <a href="../sites/aktionen.html">Weitere Aktionen</a>
         <a href="../sites/anmeldungen.html">Anmeldungen</a>
         <a href="../sites/kontakt.html">Kontakt</a>
-        <a
-          href="https://www.instagram.com/dpsg_stamm_17und4_papenburg/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="nav-ig"
-        >
+        <a href="https://www.instagram.com/dpsg_stamm_17und4_papenburg/" target="_blank" rel="noopener noreferrer" class="nav-ig">
           <img src="../img/Instagram icon.png" alt="Instagram Icon" class="ig-icon" />
           <span class="ig-text">Instagram</span>
         </a>
@@ -42,25 +36,108 @@
     </header>
 
     <main>
+  <section class="gs-page" aria-label="Gruppenstunden Übersicht">
 
-    </main>
+    <!-- ===== Intro ===== -->
+    <section class="gs-intro">
+      <h1 class="gs-intro-title">Gruppenstunden</h1>
+      <p class="gs-intro-text">
+        In unseren Gruppenstunden treffen sich Kinder und Jugendliche regelmäßig, um Abenteuer zu erleben,
+        Gemeinschaft zu erfahren und spielerisch Neues zu entdecken. Jede Altersstufe hat ihre eigene Gruppe –
+        mit passenden Aktivitäten und Leitenden.
+      </p>
+      <a href="../sites/anmeldungen.html" class="gs-intro-link">Zur Anmeldung →</a>
+    </section>
+
+    <!-- ===== WÖ ===== -->
+    <article class="gs-section gs--woe" aria-labelledby="woe-title">
+      <div class="gs-section-head">
+        <span class="gs-dot" aria-hidden="true"></span>
+        <h2 class="gs-section-title" id="woe-title">Wölflinge</h2>
+      </div>
+
+      <div class="gs-accent"></div>
+
+      <div class="gs-slider" data-autoplay="5000" aria-label="Wischbilder Wölflinge">
+        <div class="gs-slides">
+          <div class="gs-slide"><img src="../img/woe_1.jpg" alt="Wölflinge Aktion 1"></div>
+          <div class="gs-slide"><img src="../img/woe_2.jpg" alt="Wölflinge Aktion 2"></div>
+          <div class="gs-slide"><img src="../img/woe_3.jpg" alt="Wölflinge Aktion 3"></div>
+        </div>
+      </div>
+
+      <div class="gs-textblock" aria-label="Wölflinge Zeiten">
+        <ul>
+          <li>6 bis 10 Jahre</li>
+          <li>Samstags 11:00 – 12:30 Uhr</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ===== JUFI ===== -->
+    <article class="gs-section gs--jufi" aria-labelledby="jufi-title">
+      <div class="gs-section-head">
+        <span class="gs-dot" aria-hidden="true"></span>
+        <h2 class="gs-section-title" id="jufi-title">Jungpfadfinder</h2>
+      </div>
+
+      <div class="gs-accent"></div>
+
+      <div class="gs-slider" data-autoplay="5000" aria-label="Wischbilder Jungpfadfinder">
+        <div class="gs-slides">
+          <div class="gs-slide"><img src="../img/jufi-feuer.jpg" alt="Jufi Marshmallow"></div>
+          <div class="gs-slide"><img src="../img/jufi_2.jpg" alt="Jungpfadfinder Aktion 2"></div>
+          <div class="gs-slide"><img src="../img/jufi_3.jpg" alt="Jungpfadfinder Aktion 3"></div>
+        </div>
+      </div>
+
+      <div class="gs-textblock" aria-label="Jungpfadfinder Zeiten">
+        <ul>
+          <li>10 bis 13 Jahre</li>
+          <li>Donnerstags 17:30 – 19:00 Uhr</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ===== PFADI ===== -->
+    <article class="gs-section gs--pfadi" aria-labelledby="pfadi-title">
+      <div class="gs-section-head">
+        <span class="gs-dot" aria-hidden="true"></span>
+        <h2 class="gs-section-title" id="pfadi-title">Pfadfinder</h2>
+      </div>
+
+      <div class="gs-accent"></div>
+
+      <div class="gs-slider" data-autoplay="5000" aria-label="Wischbilder Pfadfinder">
+        <div class="gs-slides">
+          <div class="gs-slide"><img src="../img/pfadi-doener.jpg" alt="Pfadi Döner"></div>
+          <div class="gs-slide"><img src="../img/pfadi-waffel.jpg" alt="Pfadi Waffel"></div>
+          <div class="gs-slide"><img src="../img/pfadi_3.jpg" alt="Pfadfinder Aktion 3"></div>
+        </div>
+      </div>
+
+      <div class="gs-textblock" aria-label="Pfadfinder Zeiten">
+        <ul>
+          <li>13 bis 16 Jahre</li>
+          <li>Donnerstags 19:00 – 20:30 Uhr</li>
+        </ul>
+      </div>
+    </article>
+
+  </section>
+</main>
+
 
     <footer class="site-footer">
-    <div class="footer-left">
-        <p>©2025 - DPSG Stamm 17&4 Papenburg</p>
-    </div>
-
-    <div class="footer-center">
-        <img src="../img/Logo grau transparent klein.png" alt="Pfadfinder-Lilie" class="footer-logo">
-    </div>
-
-    <div class="footer-right">
+      <div class="footer-left"><p>©2025 - DPSG Stamm 17&4 Papenburg</p></div>
+      <div class="footer-center"><img src="../img/Logo grau transparent klein.png" alt="Pfadfinder-Lilie" class="footer-logo"></div>
+      <div class="footer-right">
         <a href="../sites/datenschutz.html">Datenschutzerklärung</a>
         <a href="../sites/impressum.html">Impressum</a>
-    </div>
+      </div>
     </footer>
 
-
     <script src="../scripts/nav.js"></script>
+    <script src="../scripts/gs.js" defer></script>
   </body>
 </html>

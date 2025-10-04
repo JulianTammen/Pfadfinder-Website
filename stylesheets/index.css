@@ -1,0 +1,155 @@
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: clamp(5rem, 12vw, 9rem) 1rem;
+    /* flexibel für alle Größen */
+    background: url('/img/bild.jpg') no-repeat center / cover;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .7);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, .45),
+            rgba(0, 0, 0, .45));
+    z-index: 1;
+}
+
+.hero h2,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: clamp(1.6rem, 3.2vw, 2.25rem);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2.1vw, 1.15rem);
+    opacity: 0.95;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.content {
+    max-width: 1100px;
+    margin: clamp(2rem, 4vw, 3rem) auto;
+    padding: 0 1.2rem;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    display: grid;
+    grid-template-columns: minmax(0, 360px) 1fr;
+    gap: clamp(1.2rem, 3.5vw, 3rem);
+    align-items: center;
+}
+
+.about .media {
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: 4 / 3;
+    /* hält ein schönes Seitenverhältnis */
+    object-fit: cover;
+    /* füllt den Rahmen ohne Verzerren */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    background: #e9eef5;
+    /* Fallback-Farbe beim Laden */
+}
+
+.about-text {
+    min-width: 240px;
+}
+
+.about-text h3 {
+    color: var(--hauptfarbe);
+    margin-bottom: 0.6rem;
+    font-size: clamp(2rem, 2.5vw, 1.5rem);
+    font-weight: 800;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+}
+
+/* ===== INSTAGRAM / EMBED ===== */
+.section-title {
+    text-align: left;
+    color: var(--hauptfarbe);
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: clamp(2rem, 2.5vw, 1.5rem);
+}
+
+/* Wrapper mit aspect-ratio für iFrame */
+.embed {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #e9eef5;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+/* Fallback, falls aspect-ratio nicht unterstützt wird */
+@supports not (aspect-ratio: 1 / 1) {
+    .embed {
+        position: relative;
+        padding-top: 56.25%;
+        height: 0;
+    }
+
+    .embed>iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.embed>iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+    }
+}
+
+@media (max-width: 600px) {
+    .about .media {
+        aspect-ratio: 3 / 2;
+    }
+}
+
+/* ===== ELF SIGHT FEED ZENTRIEREN ===== */
+.instagram-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}

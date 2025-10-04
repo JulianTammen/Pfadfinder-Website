@@ -1,191 +1,84 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pfadfinderstamm – Vorlage</title>
-    <style>
-        :root {
-            --hauptfarbe: #002343;
-            /* <-- Hauptfarbe: Blau, ändere nach Wunsch */
-            --textfarbe: #333;
-            --hellgrau: #f5f5f5;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0px;
-            font-family: "Inter", system-ui, sans-serif;
-        }
-
-        body {
-            color: var(--textfarbe);
-            line-height: 1.6;
-            background: white;
-        }
-
-        header {
-            background: var(--hauptfarbe);
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        header h1 {
-            font-size: 1.5rem;
-        }
-
-        nav a {
-            color: white;
-            margin-left: 1rem;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            position: relative;
-            text-align: center;
-            padding: 10rem 1rem;
-            background: url('bild.jpg') no-repeat center center/cover;
-            background-position: 0px -170px;
-            color: rgb(255, 255, 255);
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-
-        .hero h2,
-        .hero p {
-            position: relative;
-            z-index: 2;
-            /* Text über die dunkle Ebene legen */
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            max-width: 600px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-        }
-
-        .content {
-            max-width: 1000px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        .about {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 3rem;
-        }
-
-        .about img {
-            max-width: 350px;
-            width: 100%;
-            border-radius: 12px;
-        }
-
-        .about-text {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .about-text h3 {
-            color: var(--hauptfarbe);
-            margin-bottom: 0.5rem;
-        }
-
-        iframe {
-            border: none;
-            width: 100%;
-            height: 500px;
-        }
-
-        footer {
-            background: var(--hellgrau);
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            .hero h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DPSG 17&4 Papenburg</title>
+    <link rel="icon" type="image/x-icon" href="Logo blau transparent klein.png" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+  </head>
+  <body>
     <header>
-        <img src="Logo hell transparent.png" alt="Pfadfinder Logo" style="height: 50px;" />
-        <h1></h1>
-        <nav>
-            <a href="#gruppenstunden">Gruppenstunden</a>
-            <a href="#Sommerlager">Sommerlager</a>
-            <a href="#anmeldungen">Anmeldungen</a>
-            <a href="#ueber-uns">Über uns</a>
-            <a href="#instagram">Instagram</a>
-            <a href="#kontakt">Kontakt</a>
-        </nav>
+      <div class="brand">
+        <img src="./img/Logo hell transparent.png" alt="Pfadfinder Logo" class="brand-logo" loading="eager" />
+      </div>
+
+      <!-- Hamburger-Button -->
+      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü öffnen">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav id="primary-nav" class="nav-links" data-collapsed>
+        <a href="./sites/gs.html">Gruppenstunden</a>
+        <a href="#Sommerlager">Sommerlager</a>
+        <a href="#anmeldungen">Anmeldungen</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#kontakt">Kontakt</a>
+        <a
+          href="https://www.instagram.com/dpsg_stamm_17und4_papenburg/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-ig"
+        >
+          <img src="./img/Instagram icon.png" alt="Instagram Icon" class="ig-icon" />
+          <span class="ig-text">Instagram</span>
+        </a>
+      </nav>
     </header>
 
-    <section class="hero">
+    <main>
+      <section class="hero">
         <h2>Willkommen beim Pfadfinderstamm 17&4 Papenburg</h2>
-        <p>Gemeinsam Abenteuer erleben, Freundschaften schließen und die Natur entdecken – das ist Pfadfinden bei uns!
-        </p>
-    </section>
+        <p>Gemeinsam Abenteuer erleben, Freundschaften schließen und die Natur entdecken – das ist Pfadfinden bei uns!</p>
+      </section>
 
-    <section class="content" id="ueber-uns">
-        <div class="about">
-            <img src="bild2.jpg" alt="Pfadfindergruppe" />
-            <div class="about-text">
-                <h3>Über uns</h3>
-                <p>
-                    Wir sind der Pfadfinderstamm 17&4 Papenburg und gehören zur Deutschen Pfadfinderschaft
-                    Sankt Georg (DPSG).
-                    Unsere Gruppen treffen sich regelmäßig zu spannenden Aktionen, Lagern und Projekten – für Kinder und
-                    Jugendliche jeden Alters.
-                </p>
-            </div>
+      <section class="content" id="ueber-uns">
+        <div class="about card">
+          <img src="./img/bild2.jpg" alt="Pfadfindergruppe" class="media" loading="lazy" />
+          <div class="about-text">
+            <h3>Über uns</h3>
+            <p>
+              Wir sind der Pfadfinderstamm 17&4 Papenburg und gehören zur Deutschen Pfadfinderschaft Sankt Georg (DPSG).
+              Unsere Gruppen treffen sich regelmäßig zu spannenden Aktionen, Lagern und Projekten – für Kinder und
+              Jugendliche jeden Alters.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="content" id="instagram">
-        <h3 style="text-align:center; color: var(--hauptfarbe); margin-bottom: 1rem;">Unser Instagram-Feed</h3>
-        <!-- ↓ Hier kannst du deinen SnapWidget/Embed-Code einfügen ↓ -->
-        <iframe src="https://snapwidget.com/embed/your-instagram-feed" title="Instagram Feed"
-            allowtransparency="true"></iframe>
-    </section>
+      <section class="content" id="instagram">
+        <h3 class="section-title">Neuigkeiten</h3>
+
+        <!-- Zentrierter Wrapper -->
+        <div class="instagram-wrapper">
+          <script src="https://elfsightcdn.com/platform.js" async></script>
+          <div
+            class="elfsight-app-3863e3d5-1a92-40a0-bb4b-a9887225563c"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+      </section>
+    </main>
 
     <footer id="kontakt">
-        <p>📍 Papenburg | ✉️ E-Mail: pfadfinder17und4@gmail.com</p>
-        <p>© 2025 DPSG 17&4 Papenburg</p>
+      <p>📍 Papenburg | ✉️ E-Mail: pfadfinder17und4@gmail.com</p>
+      <p>© 2025 DPSG 17&4 Papenburg</p>
     </footer>
-</body>
 
+    <script src="./scripts/nav.js"></script>
+  </body>
 </html>
